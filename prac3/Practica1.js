@@ -1,5 +1,6 @@
 let totalCombinaciones = new Array(50);
 let numerosCombinacion;
+let resultado = document.getElementById("resultado");
 
 for (let j = 0; j < totalCombinaciones.length; j++) {
   numerosCombinacion = [];

@@ -11,6 +11,7 @@ Número 10: 993*/
 
 let contadores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let numero;
+let resultado = document.getElementById("resultado");
 
 for (let i = 0; i < 10000; i++) {
   numero = Math.floor(Math.random() * 10) + 1;
