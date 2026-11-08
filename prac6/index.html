@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6 - Tecnoshop</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 2rem;
+      }
+      .tarjeta {
+        border: 1px solid gray;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tecnoshop</h1>
+    <h2 id="titulo-carrito">Carrito (0)</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total">Total: 0 €</p>
+    <button id="vaciar-carrito" type="button">Vaciar carrito</button>
+    <hr />
+    <h2>Catálogo</h2>
+    <select id="filtro">
+      <option value="todos">Todos</option>
+      <option value="sobremesa">Sobremesa</option>
+      <option value="portatil">Portátiles</option>
+    </select>
+    <button id="ordenar" type="button">Ordenar por precio</button>
+    <ul id="catalogo"></ul>
+    <hr />
+    <h2>Añadir producto al catálogo</h2>
+    <form id="formulario">
+      <select id="tipo">
+        <option value="sobremesa">Sobremesa</option>
+        <option value="portatil">Portátil</option>
+      </select>
+      <input id="marca" placeholder="Marca *" required />
+      <input id="modelo" placeholder="Modelo *" required />
+      <input id="precio" type="number" placeholder="Precio (€) *" required />
+      <input id="ram" type="number" placeholder="RAM (GB)" />
+      <input id="disco" type="number" placeholder="Disco (GB)" />
+      <input id="pulgadas" type="number" placeholder="Pulgadas" />
+      <input
+        id="autonomia"
+        type="number"
+        placeholder="Autonomía (h)"
+        disabled
+      />
+      <button type="submit">Añadir producto</button>
+    </form>
+    <p id="error"></p>
+    <script src="clases.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
